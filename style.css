@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust the gap as needed */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #444;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img {
+    width: 290px;
+    height: 180px; 
+    border-radius: 50%;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    align-items: center;
+    background-color: black;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.mobile-text {
+    display: none;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    align-items: center;
+    transition: right 0.3s ease;
+}
+.menu a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+.menu a:last-child {
+    border-bottom: none;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 24px;
+    text-align: justify;
+    padding: 10px;
+    align-items: center;
+    display: grid;
+    width: 650px;
+    margin: auto;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+
+#section2 .content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+}
+
+#section2 img {
+    margin-right: 20px;
+}
+
+#section2 .text-box {
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: justify;
+    max-width: 500px;
+}
+
+#section3 .content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+}
+
+#section3 img {
+    margin-right: 20px;
+}
+
+#section3 .text-box {
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: justify;
+    max-width: 500px;
+}
+
+#section4 .content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+}
+
+#section4 img {
+    margin-right: 20px;
+}
+
+#section4 .text-box {
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: justify;
+    max-width: 500px;
+}
+
+.desktop-text{
+    width: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(115, 115, 115, 0));
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+footer .custom-button {
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+    .icon img {
+        width: auto;
+        height: 180px; 
+        border-radius: 50%;
+    }
+    .section p {
+        font-size: 24px;
+        text-align: center;
+        padding: 10px;
+        align-items: center;
+        display: grid;
+        width: 650px;
+        margin: auto;
+        height: auto;
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .button-container {
+        display: none;
+    }
+    .burger {
+        display: flex;
+    }
+    .section p {
+        width: 90%;
+        text-align: center;
+    }
+    .section {
+        margin: 10px;
+    }
+    #section2 .content {
+        display: grid;
+    }
+    #section3 .content {
+        display: grid;
+    }
+    #section4 .content {
+        display: grid;
+    }
+}
+.menu.active {
+    right: 0;
+    display: flex;
+}
+
+
+
+@media screen and (max-width: 280px) {
+    .burger{
+        width: auto;
+    }
+    .section p{
+        font-size: 12px;
+    }
+
+    #section4 img{
+        margin: auto;
+        width: 100%;
+    }
+    .custom-button {
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 12px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+}
